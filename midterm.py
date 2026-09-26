@@ -12,7 +12,8 @@ def display_menu():
 2. View all pets
 3. Count available vs adopted
 4. Find a pet by name
-5. Exit
+5. Remove pet
+6. Exit
     """)
     choice = int(input("Choose an option: "))
     return choice
@@ -50,10 +51,11 @@ def find_pet(pet_list):
     pass
 
 # BONUS (optional)
-def remove_pet(pet_list):
+def remove_pet():
     # your code here
-    
-    pets.remove()
+    view_pets()
+    choice = input("Type what pet you want to delete the (Name - Type - Status)(Exact): ")
+    pets.remove(choice)
     pass
 
 def main():
@@ -72,8 +74,11 @@ def main():
 
         elif choice == 4:
             find_pet()
-
+        
         elif choice == 5:
+            remove_pet()
+
+        elif choice == 6:
             print("Goodbye!")
             running = False
 
