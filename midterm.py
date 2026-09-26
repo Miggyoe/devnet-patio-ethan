@@ -23,15 +23,19 @@ def add_pet():
     pet_name = input("Pet name: ")
     animal_type = input("Animal type: ")
     pet_status = input("Status: ")
-    pet_list.append(pets)
+    pet_list = pet_name + " - " + animal_type + " - " + pet_status
+    pets.append(pet_list)
     
 
-def view_pets(pet_list):
+def view_pets():
     # loop through and print every pet — handle empty list
     i = 0
+    num = 1
     while i < len(pets):
-        print(pets[i])
+        print(f"{num}. {pets[i]}")
+      #  print(pets[i])
         i = i + 1
+        num = num + 1
 
 def count_available_adopted(pet_list):
     # loop through, count Available vs Adopted, return both
