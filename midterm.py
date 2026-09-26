@@ -7,7 +7,7 @@ pets = []  # starts empty — the user adds pets as the program runs
 
 def display_menu():
     print("""
-=== Pet Adoption  ===
+=== Pet Adoption Records ===
 1. Add a pet
 2. View all pets
 3. Count available vs adopted
@@ -16,7 +16,6 @@ def display_menu():
     """)
     choice = int(input("Choose an option: "))
     return choice
-
 
 def add_pet():
     # ask for name, animal type, status — build the string, add to the list
@@ -29,13 +28,16 @@ def add_pet():
 
 def view_pets():
     # loop through and print every pet — handle empty list
-    i = 0
-    num = 1
-    while i < len(pets):
-        print(f"{num}. {pets[i]}")
-      #  print(pets[i])
-        i = i + 1
-        num = num + 1
+    if not pets:
+        print("No pets available.")
+    else:
+        print("=== All Pets ===")
+        i = 0
+        num = 1
+        while i < len(pets):
+            print(f"{num}. {pets[i]}")
+            i = i + 1
+            num = num + 1
 
 def count_available_adopted(pet_list):
     # loop through, count Available vs Adopted, return both
@@ -43,11 +45,15 @@ def count_available_adopted(pet_list):
 
 def find_pet(pet_list):
     # ask for a name, search the list, print result or "not found"
+    #pet_name = input("Pet name: ")
+    #for pet in pets
     pass
 
 # BONUS (optional)
 def remove_pet(pet_list):
     # your code here
+    
+    pets.remove()
     pass
 
 def main():
