@@ -1,3 +1,4 @@
+import re
 """
 Midterm Practical Exam — Pet Adoption Records Manager
 Student: Ethan Miguel P. Patio
@@ -44,11 +45,12 @@ def count_available_adopted(pet_list):
     # loop through, count Available vs Adopted, return both
     pass
 
-def find_pet(pet_list):
+def find_pet():
     # ask for a name, search the list, print result or "not found"
-    #pet_name = input("Pet name: ")
-    #for pet in pets
-    pass
+    keyword = input("Search pet: ").lower
+    
+
+
 
 # BONUS (optional)
 def remove_pet():
@@ -56,7 +58,7 @@ def remove_pet():
     view_pets()
     choice = input("Type what pet you want to delete the (Name - Type - Status)(Exact): ")
     pets.remove(choice)
-    pass
+    print("A pet has been removed.")
 
 def main():
     running = True
@@ -85,6 +87,5 @@ def main():
         else:
             print("Invalid")
         # set running = False when the user picks Exit
-
 
 main()
