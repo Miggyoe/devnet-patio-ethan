@@ -1,15 +1,12 @@
 """
 Module 2 — Activity: File Sorting with os and shutil
-Student: [your name]
-Date: [date]
+Student: Ethan Miguel P. Patio
+Date: September 26, 2026
 
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-[Paste your working script below first, then come back and explain
-it here: what does your script do, and what rule did you use to
-sort the files? e.g. by extension, by name, by date, etc.]
-
+I built a fruit file name sorting code, it sorts the fruit's name alphabetically using the "sort()" method
 
 ============================================
 KEY VOCABULARY
@@ -17,7 +14,7 @@ KEY VOCABULARY
 - os module:
 - shutil module:
 - file path:
-- directory:
+- directory: 
 (add more as needed)
 
 
@@ -30,8 +27,18 @@ Paste the code you already wrote for this activity below.
 import os
 import shutil
 
-# --- paste your existing code here ---
+folder_path = "D:\ETHAN\WALLPAPER"
 
+for file in os.listdir(folder_path):
+    name, ext = os.path.splitext(file)
+    ext = ext.replace(".", "").lower()
+
+    if ext:
+        target_folder = folder_path + "/" + ext
+        os.makedirs(target_folder, exist_ok=True)
+        shutil.move(folder_path + "/" + file, target_folder + "/" + file)
+
+print("Files are sorted into folders")
 
 """
 ============================================
