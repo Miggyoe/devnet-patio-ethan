@@ -40,6 +40,8 @@ git push -u origin "notes"
 
 [What tripped you up? A confusing error message, committing to the wrong branch, a merge conflict — explain it so a classmate reading this avoids the same mistake.]
 
+The mistake I made is typing the "git add notes.md", I realized that I need to include the file path which is "git add module-1-git-github/notes.md"
+
 ---
 
 ## How this connects to something else
