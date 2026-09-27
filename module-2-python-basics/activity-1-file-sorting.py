@@ -11,10 +11,10 @@ I built a simple file sorter code that automatically organizes messy folders by 
 ============================================
 KEY VOCABULARY
 ============================================
-- os module:
-- shutil module:
-- file path:
-- directory: 
+- os module: a built-in python library, it provides a functions to use with the os
+- shutil module: also a build-in python library, useful for copying, moving, renaming, and deleting files or folder
+- file path: location of your file stored within a computer (ex. D:\ETHAN\WALLPAPER\image.png)
+- directory: used to organize and store files/folders
 (add more as needed)
 
 
