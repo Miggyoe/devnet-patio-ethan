@@ -47,7 +47,7 @@ A MISTAKE I MADE (or one I want to avoid)
 [what tripped you up while building this? e.g. a path that didn't
 exist, a file that got overwritten, something that didn't work the
 way you expected at first]
-
+The mistake I made is forgetting to use the shutil when trying to move the file 
 
 ============================================
 HOW THIS CONNECTS TO SOMETHING ELSE
