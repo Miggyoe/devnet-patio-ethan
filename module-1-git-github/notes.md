@@ -1,24 +1,23 @@
 # Module 1 — Git & GitHub
 
-**Student:** [your name]
-**Date:** [date]
+**Student:** Ethan Miguel P. Patio
+**Date:** September 27, 2026
 
 ---
 
 ## What is Git? What is GitHub? (explain like you're teaching a friend who's never used either)
 
-[Write your own explanation here. What problem does Git actually solve? How is GitHub different from Git itself?]
-
+Git is the version control that runs on the local computer while Github is the cloud where you store your codes through internet.
 ---
 
 ## Key vocabulary (in your own words)
 
-- repository:
-- commit:
-- branch:
-- push / pull:
-- pull request:
-- merge conflict:
+- repository: this is where you store your projects like a folder that contains your files, history and more. 
+- commit: the snapshot of the changes you made to the repository with commit message.
+- branch: a different folder or a place you working on without affecting the main branch
+- push / pull: push uploads the changes you made, while pull downloads the updated changes into you local repository
+- pull request: this is a request to check the submitted changes by a contributor to merge their branch to the main branch
+- merge conflict: an error when Git can't merge changes
 
 ---
 
