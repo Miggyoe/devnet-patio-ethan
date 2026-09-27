@@ -6,7 +6,7 @@ Date: September 26, 2026
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
 ============================================
-I built a fruit file name sorting code, it sorts the fruit's name alphabetically using the "sort()" method
+I built a simple file sorter code that automatically organizes messy folders by using their extensions
 
 ============================================
 KEY VOCABULARY
