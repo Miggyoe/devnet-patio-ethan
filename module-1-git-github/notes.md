@@ -24,9 +24,14 @@ Git is the version control that runs on the local computer while Github is the c
 ## Walking through what I did
 
 [Describe, step by step, a real branch → commit → push → PR you did. Include the actual commands you used.]
+First, I made my own branch "notes" and make some changes. I want to stage my specific file "notes.md" and save it using git commit command with a message "answered the walking through what I did part". Lastly, I uploaded the changes using the git push command
 
 ```
 # paste your actual commands here
+git switch -c "notes"
+git add module-1-git-github/notes.md
+git commit -m "answered the walking through what I did part"
+git push -u origin "notes"
 ```
 
 ---
